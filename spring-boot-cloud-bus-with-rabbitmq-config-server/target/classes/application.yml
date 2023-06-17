@@ -1,0 +1,42 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/madeeasycodinglife/spring-boot-config-server-location.git
+          default-label: main
+          clone-on-start: true
+          skip-ssl-validation: true
+          search-paths:
+            - configuration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Expose all endpoints
+  endpoint:
+    health:
+      show-details: always # Show detailed health information
+    info:
+      enabled: true # Enable the info endpoint
+    shutdown:
+      enabled: true # Enable the shutdown endpoint
+    metrics:
+      enabled: true # Enable the metrics endpoint
+      sensitive: false # Allow access to sensitive metrics
+
+
+
+
+
+
+
+
+
+

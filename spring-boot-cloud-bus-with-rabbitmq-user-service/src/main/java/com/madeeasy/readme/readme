@@ -1,8 +1,11 @@
 
 
  #1) POST http://localhost:port/actuator/busrefresh
-
  #2) here port is any instance of particular config-client in this case USER-SERVICE it may run in 8080,8081 or any other port
-
  #3) now GET http://localhost:port/msg
  #4) here port is any instance of particular config-client in this case USER-SERVICE it may run in 8080,8081 or any other port
+ #5) update USER-SERVICE-dev.yml file to see changes 
+ #6) POST http://localhost:port/actuator/busrefresh
+ #7) here port is any instance of particular config-client in this case USER-SERVICE it may run in 8080,8081 or any other port
+ #8) now GET http://localhost:port/msg
+ #9) here port is any instance of particular config-client in this case USER-SERVICE it may run in 8080,8081 or any other port
